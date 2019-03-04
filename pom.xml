@@ -57,7 +57,9 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
+                    <url>jdbc:h2:file:./flyway_migration;DB_CLOSE_ON_EXIT=FALSE</url>
                     <user>sa</user>
+                    <password></password>
                     <schemas>
                         <schema>history</schema>
                     </schemas>
